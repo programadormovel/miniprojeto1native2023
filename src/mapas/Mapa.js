@@ -5,28 +5,6 @@ import pin from '../../assets/favicon.png'
 
 export default function Mapa() {
 
-  const [marker] = useState(37.78825, -122.4324);
-
-  const MyCustomMarkerView = () => {
-    return (
-      <Marker 
-            coordinate={marker}
-            // image={pin}
-            
-            /> 
-    )
-  }
-
-  const MyCustomCalloutView = () => {
-    return (
-      <Marker 
-            coordinate={marker}
-            // image={pin}
-            
-            /> 
-    )
-  }
-
   return (
     <View style={styles.container}>
       <MapView
