@@ -6,6 +6,7 @@ import * as Font from "expo-font";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Rotas from "./Rotas";
+import Mapa from "./src/mapas/Mapa";
 import LoginPage from "./src/login/LoginPage";
 import RegistroPage from "./src/login/RegistroPage";
 import ConfirmaSQLite from "./src/sqlite_page/ConfirmaSQLite";
@@ -68,6 +69,7 @@ export default function App({ navigation }) {
         <Stack.Screen name="CadastroFire" component={CadastroFire} />
         <Stack.Screen name="LoginPage" component={LoginPage} />
         <Stack.Screen name="RegistroPage" component={RegistroPage} />
+        <Stack.Screen name="Mapa" component={Mapa} />
         <Stack.Screen
           name="Rotas"
           component={Rotas}
