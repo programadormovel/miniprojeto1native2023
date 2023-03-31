@@ -14,6 +14,7 @@ import HookFormAsyncStorage from "./src/hook_form/HookFormAsyncStorage";
 import HookFormSQLite from "./src/hook_form/HookFormSQLite";
 import HookFormPickerPhoto from "./src/hook_form/HookFormPickerPhoto";
 import ListarNomes from "./src/hook_form/ListarNomes";
+import ListarNomesAxios from "./src/hook_form/ListarNomesAxios";
 import Mapa from "./src/mapas/Mapa";
 import CadastroSQLite from "./src/sqlite_page/CadastroSQLite";
 import ConfirmaSQLite from "./src/sqlite_page/ConfirmaSQLite";
@@ -26,7 +27,7 @@ const Rotas = () => {
   
   return (
     <NavigationContainer  independent={true}>
-      <Drawer.Navigator initialRouteName="Mapa"> 
+      <Drawer.Navigator initialRouteName="HookFormAxios"> 
         <Drawer.Screen name="InicialPage" component={InicialPage} />
         <Drawer.Screen name="NotificacoesPage" component={NotificacoesPage} />
         {/* <Drawer.Screen name="LoginPageYup" component={LoginPageYup} />
@@ -38,6 +39,7 @@ const Rotas = () => {
         <Drawer.Screen name="HookFormPickerPhoto" component={HookFormPickerPhoto} />
         <Drawer.Screen name="CadastroFire" component={CadastroFire} />
         <Drawer.Screen name="ListarNomes" component={ListarNomes} />
+        <Drawer.Screen name="ListarNomesAxios" component={ListarNomesAxios} />
         <Drawer.Screen name="Mapa" component={Mapa} />
         <Drawer.Screen name="CadastroSQLite" component={CadastroSQLite} />
         <Stack.Screen name="ConfirmaSQLite" component={ConfirmaSQLite} />
