@@ -14,11 +14,12 @@ export default function HookFormAxios() {
       sobrenome: "",
     },
   });
+  
   const onSubmit = (data) => {
     console.log(data);
     Alert.alert(data.nome + "\n" + data.sobrenome);
 
-    axios.post("http://localhost:8085/nome", 
+    axios.post("http://10.0.1.92:8085/nome", 
       data, {mode: 'no-cors'})
     
     alert("INSERIDO " + data.nome + "\n" + data.sobrenome);
