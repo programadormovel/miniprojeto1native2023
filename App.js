@@ -8,6 +8,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Rotas from "./Rotas";
 import Mapa from "./src/mapas/Mapa";
 import LoginPage from "./src/login/LoginPage";
+import Login2 from "./src/login2/Login2";
 import RegistroPage from "./src/login/RegistroPage";
 import ConfirmaSQLite from "./src/sqlite_page/ConfirmaSQLite";
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -68,6 +69,7 @@ export default function App({ navigation }) {
       <Stack.Navigator initialRouteName="LoginPage">
         <Stack.Screen name="CadastroFire" component={CadastroFire} />
         <Stack.Screen name="LoginPage" component={LoginPage} />
+        <Stack.Screen name="Login2" component={Login2} />
         <Stack.Screen name="RegistroPage" component={RegistroPage} />
         <Stack.Screen name="Mapa" component={Mapa} />
         <Stack.Screen

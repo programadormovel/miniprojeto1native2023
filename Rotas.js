@@ -18,6 +18,7 @@ import Mapa from "./src/mapas/Mapa";
 import CadastroSQLite from "./src/sqlite_page/CadastroSQLite";
 import ConfirmaSQLite from "./src/sqlite_page/ConfirmaSQLite";
 import CadastroFire from "./src/firebase/CadastroFire";
+import { CadastroFormik } from "./src/formik/CadastroFormik";
 
 const Drawer = createDrawerNavigator();
 
@@ -41,6 +42,8 @@ const Rotas = () => {
         <Drawer.Screen name="Mapa" component={Mapa} />
         <Drawer.Screen name="CadastroSQLite" component={CadastroSQLite} />
         <Stack.Screen name="ConfirmaSQLite" component={ConfirmaSQLite} />
+        <Drawer.Screen name="Login2" component={Login2} />
+        <Drawer.Screen name="CadastroFormik" component={CadastroFormik} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
